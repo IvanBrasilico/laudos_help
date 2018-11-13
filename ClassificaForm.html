@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>TECRank</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style></head>
+<body class="w3-light-grey">
+<br>
+<div class="w3-content" style="max-width: 1400px;"><header class="w3-container w3-center w3-padding-32"> </header>
+<h1 style="text-align: center;"><b>TECRank</b></h1>
+<p style="text-align: center;"><span class="w3-tag">Ajuda</span></p>
+<br>
+&nbsp;<br>
+<div class="w3-row"><div class="w3-col l8 s12"><div class="w3-card-4 w3-margin w3-white"><div class="w3-container"><div style="text-align: right;"><a href="javascript:window.history.go(-1)"><img style="border: 0px solid ; width: 23px; height: 23px;" alt="" src="SAT/voltar.jpg"></a> &nbsp;| &nbsp;<a href="index.html">Voltar à tela inicial</a></div><span class="w3-opacity"></span><h3><span class="w3-opacity"><b>Sistema de
+auxílio em Classificação Fiscal</b></span></h3>
+</div>
+<div class="w3-container">
+<br>
+O
+sistema TECRank é um motor de buscas para a TEC. Ele utiliza técnicas
+de busca, ranqueamento e processamento de textos para
+fazer uma pontuação probabilística.<br>
+<br>
+O sistema roda totalmente embutido, podendo ser usado totalmente sem
+acesso à redes, em quaisquer computadores que possuam o Java instalado,
+dentro ou fora do ambiente da Receita Federal. <br>
+<br>
+Foi incorporado ao arquivo do sistema o texto completo da última TEC
+publicada pelo MDIC. Quando carregado, o sistema realiza alguns
+pré-processamentos, que consistem em percorrer todo o texto da TEC e
+montá-lo de diversas formas estruturadas, utilizando técnicas de
+inteligência artificial e processamento de linguagem (Vetorização de
+palavras, TF-IDF, Stemização, Bigramas, entre outras).<br>
+<br>
+O Sistema oferece sete abas para pesquisas. Abaixo descreve-se cada
+uma.<br>
+<br>
+<big style="text-decoration: underline;"><big>NCM
+Completa</big></big><br>
+Exibe o texto da TEC original, sem pré-processamento.<br>
+<span style="font-weight: bold;">Botão "Pesquisar Texto"</span>
+-&nbsp; pesquisa por palavras ou parte delas ou simplesmente rolar
+o texto. Importante lembrar que nesta aba a busca é exata, sensível à
+caixa e a sinais gráficos (ex.:acentos) isto é, "capítulo", "Capítulo",
+"Capitulo" e "CAPITULO" são buscas diferentes. Na TEC
+está&nbsp;grafado "Capítulo".<br>
+<br>
+(Esta é a única aba fica disponível para uso imediatamente após o
+carregamento. As outras abas devem esperar o pré-processamento acabar,
+o que pode demorar de 1 a 2 minutos dependendo do computador utilizado)<br>
+<br>
+<big style="text-decoration: underline;"><big>Pesquisar
+NCM&nbsp;</big></big><br>
+Exibe a TEC propriamente dita,
+hierarquizada, apenas o texto e código das posições e subposições até o
+nível de subitem com a classificação final e a alítquota de Imposto de
+Importação.<br>
+<span style="font-weight: bold;">Botão "Pesquisa Código"</span>
+-pesquisa por código ou parte dele.<br>
+<br>
+<p name="0cd8" class="graf graf--p"><big style="text-decoration: underline;"><big>Capítulos e
+Notas</big></big><br>
+Exibe uma lista dos Capítulos da TEC. Selecionado um capítulo na lista,
+exibe suas Notas.</p>
+<big style="text-decoration: underline;"><big><br>
+Estatística
+Capítulo NCM&nbsp;</big></big><br>
+Exibe o histórico, por percentual de peso, das importações de cada
+capítulo NCM em cada país.<br>
+<br>
+<big style="text-decoration: underline;"><big>Sugestões</big></big><br>
+Esta aba é onde realmente ocorre o uso de algoritmos "inteligentes"<br>
+<br>
+Exibe os subitens TEC como um texto "completo", isto é, o texto do
+subitem adicionado de todas as posições hierarquicamente superiores.
+Além disso, pontua as palavras deste subitem que coincidem com o texto
+buscado de acordo com a quantidade de ocorrências no texto. O resultado
+é ordenado por pontuação obtida, da maior para o menor.<br>
+<br>
+<big style="text-decoration: underline;"><big>Sugestões
+Posição</big></big><br>
+Esta aba é idêntica a anterir, mas exibe Posições ao invés de subitens<br>
+<br>
+<span style="font-weight: bold;">Botão "Pesquisa pontuação"</span>
+- pesquisa por palavras, pontua, e exibe o resultado nas abas
+"Sugestões". <br>
+Parâmetros: <br>
+Utilizar pesos ponderados TF/IDF (S/N)<br>
+Ao invés de contar simplesmente as ocorrências dos termos pesquisados
+na linha da TEC, considera "pesos" pontuando mais as palavras menos
+frequentes na TEC e também o peso relativo de uma palavra em cada linha.<br>
+<br>
+Texto puro (S/N)<br>
+Procura exatamente a(s) palavra(s) digitada(s). Insensível a caixa e
+sinais gráficos.<br>
+<br>
+Stemização (S/N)<br>
+Procura pelos radicais das palavras. Estampado vira ESTAMP, Tinto vira
+TINT.<br>
+<br>
+Bigramas (S/N)<br>
+Procura exatamente as palavras digitadas. Insensível a caixa e sinais
+gráficos. Só que procura as palavras em duplas, na ordem digitada.
+"Outros tecidos", "tecidos de", "de malha", etc.<br>
+<br>
+<big><big><span style="text-decoration: underline;">Explicação</span><br>
+</big></big>Exibe os termos pesquisados e algumas
+estatísticas. Permite saber se as palavras digitadas foram encontradas
+na TEC, e sua frequência. Serve para refinamento e correção de
+pesquisas. Como exemplo, caso&nbsp;pesquisado&nbsp;"Tylenol",
+esta aba não vai exibir estatísticas porque a palavra não existe na
+TEC. Caso seja pesquisado por "Paracetamol", será exibida a informação
+"PARACETAMOL. Total de ocorrências: 3". Igualmente, a pesquisa por
+"Estampados" retornará "ESTAMPADOS. Total de ocorrências: 45". Já
+"Estampado" sem o plural não retornará nada.<br>
+<big><big><big><br>
+<span style="font-weight: bold; text-decoration: underline;">Telas
+de exemplo</span></big><br>
+<br>
+Aqui, iniciamos uma busca simples, digitando apenas "outros tecidos" e
+clicando em "Pesquisar pontuação".<br>
+Note-se
+que parando o ponteiro do mouse sobre um item da lista, abre-se uma
+pequena janela contendo a linha e cada palavra encontrada da busca na
+linha, assim como a pontuação de cada palavra.<br>
+</big></big><img style="width: 763px; height: 432px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/1.jpg" alt=""><br>
+<big><big>Numa segunda etapa, começamos a refinar nossa
+busca. Note-se que as palavras "malha" e "tintos" recebem pontuação bem
+maior.<br>
+</big></big><img style="width: 763px; height: 432px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/2.jpg" alt=""><br>
+<big><big>Adicionando a palavra "algodão" na busca<br>
+</big></big><img style="width: 820px; height: 432px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/3.jpg" alt=""><br>
+<big><big>Aqui, selecionamos a aba
+"Explicação" para entender o porque de cada pontuação. A pontuação de
+cada palavra será sempre inversamente proporcional ao seu total de
+ocorrências.<br>
+</big></big><img style="width: 820px; height: 432px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/4.jpg" alt=""><br>
+<big><big>Resultado olhando a aba "Posição"<br>
+<br>
+</big></big><img style="width: 820px; height: 432px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/5.jpg" alt=""><br>
+<big><big><br>
+Modificando a busca para outro tipo de tecido:<br>
+</big></big><img style="width: 996px; height: 625px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/7.jpg" alt=""><br>
+<big><big><br>
+É possível usar um ponto de exclamação (!) antes da palavra
+pesquisada. Assim, a pontuação desta palavra passará a ser negativa e
+linhas contendo esta palavra irão para o final da lista. <br>
+<br>
+</big></big><img style="width: 996px; height: 625px;" alt="" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica8.jpg"><br>
+<big><big><br>
+Abaixo, a aba "NCM Completa", onde, em caso de dúvidas, pode ser
+consultado o texto completo da TEC<br>
+</big></big><img style="width: 906px; height: 515px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica11.jpg" alt=""><br>
+<big><big><br>
+</big></big><big><big><br>
+A Aba "Pesquisar NCM" exibe a NCM de forma hierárquica.<br>
+</big></big><img style="width: 753px; height: 538px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica13.jpg" alt=""><br>
+<big><big><br>
+A aba "Capítulos e notas" permitem consultar cada Capítulo, descrição e
+notas de forma mais prática e rápida<br>
+<br>
+</big></big><img style="width: 510px; height: 492px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica14.jpg" alt=""><big><big><small><br>
+<br>
+</small>Na aba "Estatística capítulo NCM" está disponível a
+porcentagem,
+por país de origem, de importações brasileiras em cada Capítulo.<br>
+</big></big><img style="width: 702px; height: 562px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica15.jpg" alt=""><br>
+<big><big><br>
+As telas a seguir demonstram outras pesquisas, resultados,
+estatísticas&nbsp;e pontuações correspondentes, para demonstrar as
+possibilidades de utilização<br>
+</big></big><img style="width: 830px; height: 277px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica17.jpg" alt=""><br>
+<big><big><br>
+</big></big><img style="width: 830px; height: 277px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica18.jpg" alt=""><br>
+<big><big><br>
+<br>
+Uma descrição complexa, retirada de um Laudo, exibe o resultado
+desejado em terceiro na lista. Note-se que o resultado não está em
+primeiro porque, nesta linha, a expressão utilizada na TEC é "Resinas
+epóxidas" e o Laudo utilizou "Resina Epóxida". A Stemização encontrou
+os radicais, mas as palavras "resina" e "epóxida" não foram
+encontradas. Nem sempre a stemização resolve sozinha, por isso é
+importante olhar o retorno do sistema sobre a pontuação de cada linha e
+refinar a pesquisa.<br>
+</big></big><img style="width: 886px; height: 569px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica20.jpg" alt=""><br>
+<big><big><br>
+Um exemplo de refinamento: trocar "arruela" por "arruelas" ou
+procurar pelos dois termos. Eliminar as palavras "metal" e "metais" se
+apenas plástico é a desejada.<br>
+</big></big><img style="width: 823px; height: 523px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica22.jpg" alt=""><br>
+<big><big><br>
+</big></big><img style="width: 854px; height: 412px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica24.jpg" alt=""><br>
+<big><big><br>
+</big></big><img style="width: 884px; height: 513px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica25.jpg" alt=""><br>
+<big><big><br>
+No caso abaixo, a stemização também resolveria a busca. Experimentar
+várias combinações até que o subitem desejado seja encontrado na
+primeira linha pode ser mais interessante que rolar várias linhas para
+baixo.<br>
+<br>
+</big></big><img style="width: 823px; height: 523px;" src="SAT/UTILITARIOS/%5BCLASSIF_FISCAL%5D/classifica27.jpg" alt=""><br>
+<br>
+</div>
+</div>
+<p class="MsoNormal"><span style="" lang="PT-BR"></span></p>
+<p class="MsoNormal"><a href="index.html">&lt;&lt;&lt;
+Voltar à tela inicial</a></p>
+<br>
+<div class="w3-col l4">
+<hr></div>
+</div>
+<br>
+</div>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer></div>
+</body></html>

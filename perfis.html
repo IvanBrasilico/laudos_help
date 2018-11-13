@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Perfis de acesso</title></head>
+<body>
+<big><big><span style="font-weight: bold; text-decoration: underline;">Perfis
+de segurança disponíveis no sistema </span></big></big><br>
+<br>
+0=Público<br>
+Usuários não autenticados - sem telas disponíveis no momento<br>
+<br>
+1=Apoio<br>
+- Relatório de retirada de amostras<br>
+<br>
+2=Gralt<br>
+- Cadastramento de assistentes e especialidades<br>
+- Tela gerenciar SAT/LAB<br>
+- Designar assistente, enviar SAT para laboratório, devolver SAT para
+edição<br>
+- Receber Laudo<br>
+<br>
+4=AFRFB<br>
+- Cadastramento de SAT/LAB e itens&lt;img alt="Tela de Quesito filtrada"<br>&nbsp;src="img/QuesitoFormFiltrado.png"&gt;&lt;br&gt;<br><br>
+- Tela de quesitos<br>
+<br>
+8=Revisão<br>
+- Pesquisa de SAT<br>
+<br>
+16=Gerência<br>
+sem telas disponíveis no momento<br>
+<br>
+32=MASTER(Acesso de manutenção)<br>
+<br>
+Os Perfis podem ser combinados, se necessário. Exemplos:<br>
+<br>
+17=16+1=Gerência+Apoio<br>
+3=Gralt+Apoio<br>
+7=4+2+1=AFRFB+Gralt+Apoio<br>
+12=Revisão+AFRFB<br>
+31=Todos os perfis de usuário<br>
+63=Todos os perfis <br>
+<br>
+Detalhes adicionais da implementação de segurança.<br>
+TODO acesso é validado. O sistema lê o usuário atualmente "logado" no
+ambiente Windows e checa se está no Banco de Dados. Em seguida, checa o
+perfil deste usuário e consulta uma lista de controle de acesso.<br>
+<br>
+Nesta lista de controle de acesso, o Acesso pode ser dado(ou não) para
+a abertura de uma tela ou para o acesso ao Banco de Dados, na
+modalidade leitura ou modificação, no caso do Banco de Dados. Tanto a
+parte do sistema (classe) que faz acesso ao Banco de Dados quanto a
+parte do sistema (classe) que exibe as telas checam este bando de "ACL"
+antes de permitirem a operação. A falta de permissões interrompe uma
+ação do sistema e exibe uma mensagem de erro.<br>
+<br>
+ACLs cadastrados em 31/01/2017 (1=leitura, 2=gravação):<br>
+<br>
+<table border="1" cellpadding="0" cellspacing="1">
+<tbody>
+<tr>
+<th>id</th>
+<th>dataregistro</th>
+<th>username</th>
+<th>objeto</th>
+<th>perfil</th>
+<th>usuarioid</th>
+<th>tipoacesso</th>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td>AssistenteForm</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td>SATForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td>QuesitoForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td>SATFluxo</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td>SATPesquisaForm</td>
+<td>8</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td>EspecialidadeForm</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td>ResumoLaudoForm</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td>ItemSATForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+<td>Login</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td></td>
+<td>SAT</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td></td>
+<td>SAT</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td></td>
+<td>ItemSAT</td>
+<td>2</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td></td>
+<td>ItemSAT</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td></td>
+<td>Assistente</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td></td>
+<td>Especialidade</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>16</td>
+<td></td>
+<td></td>
+<td>Quesito</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>17</td>
+<td></td>
+<td></td>
+<td>ChaveQuesito</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>18</td>
+<td></td>
+<td></td>
+<td>QuesitoFavorito</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>19</td>
+<td></td>
+<td></td>
+<td>SATPesquisaForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>20</td>
+<td></td>
+<td></td>
+<td>ImpedimentoForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>21</td>
+<td></td>
+<td></td>
+<td>Impedimento</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>22</td>
+<td></td>
+<td></td>
+<td>EventoSAT</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>23</td>
+<td></td>
+<td></td>
+<td>ResumoLaudo</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>24</td>
+<td></td>
+<td></td>
+<td>DI</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>25</td>
+<td></td>
+<td></td>
+<td>Adicao</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>26</td>
+<td></td>
+<td></td>
+<td>ItemAdicao</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>27</td>
+<td></td>
+<td></td>
+<td>ProcessoSAT</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>28</td>
+<td></td>
+<td></td>
+<td>Amostra</td>
+<td>4</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>29</td>
+<td></td>
+<td></td>
+<td>AmostraForm</td>
+<td>4</td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<a href="index.html">&lt;&lt;&lt; Voltar à tela inicial</a><br>
+<br>
+<br>
+</body></html>

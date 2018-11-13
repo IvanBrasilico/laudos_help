@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>Historico DI</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style></head>
+<body class="w3-light-grey">
+<br>
+<div class="w3-content" style="max-width: 1400px;"><header class="w3-container w3-center w3-padding-32"> </header>
+<h1 style="text-align: center;"><b>Histórico DI</b></h1>
+<p style="text-align: center;"><span class="w3-tag">Ajuda</span></p>
+<br>
+
+
+
+<br>
+<div class="w3-row"><div class="w3-col l8 s12"><div class="w3-card-4 w3-margin w3-white"><div class="w3-container"><div style="text-align: right;" class="w3-card-4 w3-margin w3-white">
+<div style="margin-top: 0px; height: 22px;" class="w3-container">
+<a href="javascript:window.history.go(-1)"><img style="border: 0px solid ; width: 23px; height: 23px;" alt="" src="SAT/voltar.jpg"></a>&nbsp; &nbsp;| &nbsp;<a href="index.html">Voltar à tela inicial</a><span class="w3-opacity"></span></div></div><h3><span class="w3-opacity"><b>Importar histórico da DI</b></span></h3>
+</div>
+<div class="w3-container">
+<br>
+A Tela serve para escolha de uma planilha na qual será acionado um
+script que recupera dados do Sistema Siscomex Importação.<br>
+<br>
+Quando da revisão aduaneira, o fluxo padrão é baixar do histórico do
+Importador as DIs anteriores. Isto normalmente é feito no DWAduaneiro.
+Ocorre que o DWAduaneiro não contém os dados do histórico da DI, e é
+necessário saber, além das DIs anteriores, se em alguma delas houve
+pedido de Laudo. <br>
+<br>
+Como a RFB não possuía sistema de controle de Laudos, como precaução é
+necessário consultar no sistema&nbsp;as DIs deste histórico do
+Importador e pelo histórico de interrupções checar se houve pedido de
+Laudo.<br>
+<br>
+Esta tela permite&nbsp;automatizar esta tarefa. Basta produzir uma
+planilha com os números de DI e depois indicá-la nesta tela apertando o
+botão "Preenche planilha de DIs com histórico do Siscomex Importação".<br>
+<br>
+O sistema então irá ler o campo DI da planilha. Os números das DIs a
+consultar devem estar na primeira coluna da primeira aba da planilha
+fornecida, a partir da primeira linha. Ou então a planilha poderá
+também
+conter uma linha de título. Se contiver, o sistema procurará por uma
+coluna na linha de título (linha 1) começando com a palavra DI.<br>
+<br>
+Após o&nbsp;processamento, a planilha fornecida será copiada para
+nova planilha com mesmo
+nome e sufixo _historico e será gerada nova aba nesta nova planilha com
+os históricos encontrados no Siscomex.
+As colunas da planilha gerada serão "número da DI", "Pedido de Laudo"
+("chutando" SIM OU NAO, baseado na existência das palavras 'LAUDO',
+'EXAME', 'LABORAT' nos históricos), e os históricos encontrados, uma
+coluna por histórico.
+<br>
+</div>
+</div>
+<p class="MsoNormal"><span style="" lang="PT-BR"></span></p>
+<p class="MsoNormal"><a href="index.html">&lt;&lt;&lt;
+Voltar à tela inicial</a></p>
+<br>
+<div class="w3-col l4">
+<hr></div>
+</div>
+<br>
+</div>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer></div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>Avalia Laudo</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style></head>
+<body class="w3-light-grey">
+<br>
+<div class="w3-content" style="max-width: 1400px;"><br><h1 style="text-align: center;"><b>Avaliação de
+Laudos</b></h1>
+<p style="text-align: center;"><span class="w3-tag">Ajuda</span></p>
+<br>
+&nbsp;<br>
+<div class="w3-row"><div class="w3-col l8 s12"><div class="w3-card-4 w3-margin w3-white"><div class="w3-container"><div style="text-align: right;"><a href="javascript:window.history.go(-1)"><img style="border: 0px solid ; width: 23px; height: 23px;" alt="" src="SAT/voltar.jpg"></a>&nbsp;&nbsp;| &nbsp;<a href="index.html">Voltar à tela inicial</a> &nbsp;|&nbsp; <a href="ImportaHistoricoDIForm.html">Importação de histórico da DI &gt;&gt;</a><br></div><span class="w3-opacity"></span><h3><span class="w3-opacity"><b>Tela para
+Avaliação de Laudos</b></span><br>
+</h3>
+</div>
+<div class="w3-container">
+Esta tela fornece as ferramentas para preparo da Revisão Aduaneira,
+baseada nos resultados dos Laudos Laboratoriais.<br>
+<br>
+<img style="width: 746px; height: 608px;" src="SAT/SAT/%5BAN_LAUDO%5D/Avaliar_sat.jpg" alt=""><br>
+<br>
+<span style="text-decoration: underline;">Ações principais:<br><br>1. "Arquivar
+SAT/LAB - Sem Divergência"</span>- O SAT/LAB é arquivado sem
+divergência. Nesta pasta o pedido e seus atributos não poderão mais serem editados.<br style="text-decoration: underline;">
+<span style="text-decoration: underline;">2. "Avalidado -
+Com Divergência"</span>-
+O SAT/LAB é arquivado numa pasta que sinaliza&nbsp;divergência. A
+avaliação de Laudo poderá prosseguir/ser editada nesta pasta, somente
+será bloqueada a edição após a distibuição para autuação.<br><br><br>Aba "Informar divergência e palavras chave":<br><br style="text-decoration: underline;">
+<span style="text-decoration: underline;">"Importar
+palavras chaves"</span> - abre uma janela para a importação de
+palavras chave diretamente do arquivo PDF do Laudo (abaixo).<br>
+<br>
+<img style="width: 658px; height: 207px;" src="SAT/SAT/%5BAN_LAUDO%5D/Importa_palavras%20chave.jpg" alt=""><br style="text-decoration: underline;">
+<span style="text-decoration: underline;"><br>
+"Incluir
+avaliação de divergências"</span>- Realiza a inclusão de uma linha com as palavras chave escolhidas e a informação se laudo é divergente.&nbsp;<br style="text-decoration: underline;">
+<span style="text-decoration: underline;">"Enviar
+solicitação ao DW"</span>- Roda um relatório no DW, procurando importações anteriores para o mesmo CNPJ Base e palavras chave escolhidas.<br style="text-decoration: underline;">
+<br>
+<br>
+Aba "<big>Cadastrar Base de cálculo</big>"<br>
+<br>
+<img style="width: 720px; height: 286px;" src="SAT/SAT/%5BAN_LAUDO%5D/An_laudo_cd_calc.jpg" alt=""><br>
+<span style="text-decoration: underline;"><br>
+1. Carregar
+planilha</span>-
+Abre o diretório para&nbsp;carregar uma planilha. Esta planilha deve
+ser a gerada pelo DW, com os dados das DIs pesquisadas no DW.<br style="text-decoration: underline;">
+<span style="text-decoration: underline;">2. Recuperar
+planilha selecionada</span> - Caso já tenha sido carregada uma planilha, esta
+ação realiza o download e abertura.<br>
+<br>
+<span style="font-weight: bold;">Informar classificação
+fiscal</span><br>
+<br>
+<img style="width: 719px; height: 284px;" src="SAT/SAT/%5BAN_LAUDO%5D/An_laudo_incf.jpg" alt=""><br>
+<span style="text-decoration: underline;"><br>
+1. Incluir
+Classificação Fiscal</span> - Inclui a classificação fiscal, vinculada ao Usuário que opinou pelo uso desta classificação.<br style="text-decoration: underline;">
+<a style="text-decoration: underline;" href="ClassificaForm.html">2. Exibir tela de ajuda para
+classificação fiscal</a> - Exibe o sistema TECRank de auxílio à classificação fiscal;<br style="text-decoration: underline;">
+<span style="text-decoration: underline;">3. Enviar
+solicitação ao DW</span> - Roda um relatório no DW, procurando importações anteriores para o mesmo CNPJ Base, palavras chave e NCM escolhidos.<br>
+<br>
+<span style="font-weight: bold;">Cadastrar VEL</span><br>
+<br>
+<img style="width: 721px; height: 284px;" src="SAT/SAT/%5BAN_LAUDO%5D/An_laudo_cdvel.jpg" alt=""><br>
+<span style="text-decoration: underline;"><br>
+1. Carregar VEL</span>-
+Realiza o cadastro do VEL(Valor estimado de Lançamento). Abre o
+diretório para&nbsp;carregar uma planilha. Esta planilha deve ser a
+gerada pelo DW, com os dados das DIs pesquisadas no DW. O usuário
+poderá infomar data de início, fim, e valor total. O sistema guardará
+estes dados e a planilha produzida em Banco de Dados. O VEL é uma
+estimativa, baseada nos dados do DWAduaneiro, do valor de lançamento
+que a revisão aduaneira baseada naquele Laudo poderá gerar.<br style="text-decoration: underline;">
+<span style="text-decoration: underline;"></span><br style="text-decoration: underline;">
+<br>
+<a href="ImportaHistoricoDIForm.html">-&gt;
+Importação de histórico da DI
+</a></div>
+</div>
+<p class="MsoNormal"><span style="" lang="PT-BR"></span></p>
+<p class="MsoNormal"><a href="index.html">&lt;&lt;&lt;
+Voltar à tela inicial</a></p>
+<br>
+<div class="w3-col l4">
+<hr></div>
+</div>
+<br>
+</div>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer></div>
+</body></html>

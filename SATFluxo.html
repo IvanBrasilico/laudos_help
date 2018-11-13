@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>Gerenciar</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style></head>
+<body class="w3-light-grey">
+<br>
+<div class="w3-content" style="max-width: 1400px;"><header class="w3-container w3-center w3-padding-32"> </header>
+<h1 style="text-align: center;"><b>Fluxo</b></h1>
+<p style="text-align: center;"><span class="w3-tag">Ajuda</span></p>
+
+
+
+<br>
+<div class="w3-row"><div class="w3-col l8 s12"><div class="w3-card-4 w3-margin w3-white"><div class="w3-container"><div style="text-align: right;">
+<a href="javascript:window.history.go(-1)"><img style="border: 0px solid ; width: 23px; height: 23px;" alt="" src="SAT/voltar.jpg"></a> &nbsp;|&nbsp;<a href="index.html">Voltar à tela inicial</a> &nbsp;|&nbsp; <a href="QuesitoForm.html">Quesitos &gt;&gt;</a> &nbsp;|&nbsp; <a href="ResumoLaudoForm.html">Receber Laudo &gt;&gt;</a> &nbsp;|&nbsp;<a href="AvaliaLaudoForm.html">Avaliar Laudo &gt;&gt;</a>&nbsp; |&nbsp; <a href="SATForm.html">Cadastro de SAT &gt;&gt;</a></div><h3><span class="w3-opacity"><b>Gerenciamento de fluxo de trabalho do SAT/LAB</b></span></h3>
+</div>
+<div class="w3-container">
+<br>
+<div style="text-align: justify;"><span style="font-weight: bold;">O sistema trabalha com
+vários&nbsp;"Estados" possíves para o
+SAT/LAB, de acordo com o seu andamento no fluxo de trabalho. Esta tela
+permite a gestão e visualização do SAT/LAB neste fluxo de trabalho.</span><br>
+</div>
+<br>
+<div style="text-align: justify;"><span style="text-decoration: underline;">Criando Pedido</span>
+- Quando o SAT/LAB ainda está sendo preenchido/editado
+pelo AFRFB responsável.<br>
+</div>
+<br>
+<div style="text-align: justify;"><span style="text-decoration: underline;">Submetido</span>
+- Terminada a edição, o AFRFB submete o pedido e um&nbsp;PDF
+assinado
+ao setor que controla a emissão de laudos. A partir deste momento o SAT
+não poderá ser mais editado. Se houver necessidade, o setor de Laudo
+pode selecionar a a ação "Devolver para edição" para retornar ao Estado
+anterior. Será gerada uma segunda versão do PDF quando o SAT for
+novamente submetido ao Setor de Laudo.<br>
+</div>
+<br>
+<div style="text-align: justify;"><span style="text-decoration: underline;">Enviado para
+Assistente/LAB</span> - Quando o PDF for enviado ao laboratório
+ou
+for designado Assistente, o setor de Laudo deverá informar através da
+ação "Enviar para laboratório..." e o SAT/LAB ficará nesta pasta para
+controle. A partir deste momento o SAT/LAB não poderá voltar para
+edição.<br>
+<br>
+<span style="text-decoration: underline;">Laudo Recebido</span>
+- Quando o Assistente/Laboratório entregar o Laudo,&nbsp;
+o
+setor responsável carregará o(s) PDF(s) no sistema&nbsp; através da
+ação "Informar recebimento...", e o SAT passará para esta pasta.<br>
+<br>
+<span style="text-decoration: underline;">Laudo com
+Divergência</span> - Apresenta todos os laudos que apresentaram
+divergências em algum dos requisitos.<br>
+<br>
+<span style="text-decoration: underline;">Impedimento Ativo</span>
+- quando o laudo possuir um impedimento ativo será adicionado nesta
+pasta.<br>
+<div style="text-align: left;"></div>
+<span style="text-decoration: underline;">Distribuído para
+autuação</span> - Quando houver necessidade de autuação o laudo
+será armazenado aqui.<br>
+<br><span style="text-decoration: underline;">
+Laudo analisado</span> - Após laudo recebido, Setor/AFRFB poderá realizar uma
+análise deste, quando então o respectivo SAT/LAB fserá encaminhado para
+uma destas pastas:<br>
+<span style="text-decoration: underline;"><br>
+-&gt; Arquivado com Laudo sem resultado</span> - Quando na
+tela de avaliação de laudo é selecionado Arquivar SAT/LAB - Sem
+Divergência.<br>
+<br>
+<span style="text-decoration: underline;">-&gt;
+Arquivado com Laudo com resultado</span> - Quando na tela de
+avaliação de laudo é selecionado Avaliado - Com Divergência.<br>
+<span style="text-decoration: underline;"><br>
+-&gt; Arquivado sem pedido</span> - Quando é realizado um
+arquivamento prévio do arquivo.<br>
+<br>
+<span style="text-decoration: underline;">Aguardando
+manifestação do interessado</span> - Quando o SAT/LAB necessita
+de uma ação do interessado para continuar seu fluxo.<br>
+<span style="text-decoration: underline;"></span><br>
+<br>
+<img style="width: 604px; height: 618px;" src="SAT/SAT/%5BGERENCIAR%5D/Tela_gerenciar.jpg" alt=""><br>
+<br>
+<span style="font-weight: bold;">A tela possui uma
+visualização em árvore, exibindo os SATs em cada
+pasta, e, abaixo deles, as seguintes pastas:</span><br>
+<br><span style="text-decoration: underline;">
+Eventos</span> - lista de todas as ações efetuadas no SAT com data e hora<br><span style="text-decoration: underline;">
+Versões</span> - lista de PDFs criados para o SAT na função "Submeter".<br><span style="text-decoration: underline;">
+Itens</span> - lista de itens do SAT<br><span style="text-decoration: underline;">
+Laudos</span> - lista resumo dos laudos recebidos e vinculados a este SAT <br>
+</div>
+<br>
+<br>
+<img style="width: 534px; height: 528px;" src="SAT/SAT/%5BGERENCIAR%5D/criando.jpg" alt=""><br>
+<br>
+<br>
+<span style="font-weight: bold; text-decoration: underline;">CAMPOS
+DISPONÍVEIS<br>
+<br>
+</span><span style="text-decoration: underline;">Arquivamento
+prévio</span> - Envia o SAT/LAB para a pasta arquivado sem pedido.<br>
+<span style="text-decoration: underline;">Submeter ao GRALT</span>
+- Submete a solicitação&nbsp; ao Setor de Laudo.<br>
+<span style="text-decoration: underline;">Devolver para
+edição</span> - Reenvia o arquivo para a criação de pedido.<br>
+<span style="text-decoration: underline;">Aguardar
+interessado</span> - O SAT/LAB vai para a pasta "Aguardando
+manifestação do interessado" até que o interessado execute alguma ação.<br>
+<span style="text-decoration: underline;">Quesitos do
+importador</span> - Exibe a tela de <a style="background-color: white;" href="QuesImportador.html">Quesitos</a><span style="background-color: white;">.</span><br>
+<span style="text-decoration: underline;">Enviar para
+laboratório</span> - Envia o Assistente/LAB.<br>
+<span style="text-decoration: underline;">Devolver para
+GRALT</span> - Devolve para o Setor de Laudo.<br>
+<span style="text-decoration: underline;">Anexar/Consultar
+Laudo</span> - Abre a janela de <a href="ResumoLaudoForm.html">Anexo
+e Consulta de Laudo.</a><br>
+<span style="text-decoration: underline;">Avaliar Laudo</span>
+- Abre a tela para <a href="AvaliaLaudoForm.html">Avaliação
+de Laudo</a>.<br>
+<span style="text-decoration: underline;">Arquivar </span>-
+Arquiva o SAT/LAB.<br>
+<br>
+<span style="text-decoration: underline;">Ordem de coleta</span>
+- Abre um PDF com a Ordem de Coleta.<br>
+<span style="text-decoration: underline;">Visualizar
+SAT/LAB</span> - Abre a janela de <a href="SATForm.html">Cadastro</a>
+de visualização do SAT/LAB.<br>
+<span style="text-decoration: underline;">Recuperar PDF
+SAT/LAB</span> - Abre um PDF para a recuperação do SAT/LAB<br>
+<span style="text-decoration: underline;">Ver Laudo</span>
+- Exibe o laudo.<br>
+<br>
+<span style="text-decoration: underline;">Clonar </span>-
+Faz uma cópia do arquivo.<br>
+<span style="text-decoration: underline;">Aditamento</span>
+- Clona o arquivo e faz um aditamento ao SAT/LAB.<br>
+<span style="text-decoration: underline;">Impedimento </span>-
+Realiza o cadastro de impedimento<br>
+<br>
+</div>
+</div>
+
+<p class="MsoNormal"><a href="index.html">&lt;&lt;&lt;
+Voltar à tela inicial</a></p>
+
+<div class="w3-col l4">
+<hr></div>
+</div>
+<br>
+</div>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer></div>
+</body></html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"><title>Pesquisa</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style></head>
+<body class="w3-light-grey">
+<br>
+<div class="w3-content" style="max-width: 1400px;"><header class="w3-container w3-center w3-padding-32"> </header>
+<h1 style="text-align: center;"><b>Pesquisa</b></h1>
+<p style="text-align: center;"><span class="w3-tag">Ajuda</span></p>
+<br>
+<div class="w3-row">
+<div class="w3-col l8 s12">
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container">
+<div style="text-align: right;">
+<a href="javascript:window.history.go(-1)"><img style="border: 0px solid ; width: 23px; height: 23px;" alt="" src="SAT/voltar.jpg"></a> &nbsp;|&nbsp;<a href="index.html">Voltar à tela inicial</a> &nbsp;| &nbsp;<a href="ResumoLaudoForm.html">Receber Laudos &gt;&gt;</a>
+</div><h3><span class="w3-opacity"><b>Pesquisa de
+SAT/LAB</b></span></h3>
+</div>
+<div class="w3-container">
+<br>
+Esta
+tela possibilita uma pesquisa com tabulação dos resultados em três
+modos diferentes: "Começa com", "Expressões Regulares" e "Pesquisa de
+Texto Completo".<br>
+<br>
+São pesquisados e exibidos simultaneamente
+campos do pedido de exame e de seus itens, conforme exemplos abaixo.
+Primeiro é necessário preencher os campos de filtro para em seguida
+através do botão "Aplicar Filtro" exibir os resultados.<br>
+<br>
+São oferecidas três opções de uso das pesquisas, que podem ser
+adaptados conforme a necessidade.<br>
+<br>
+<img style="width: 852px; height: 606px;" src="SAT/SAT/%5BPESQUISA%5D/Tela_Pesquisa.jpg" alt=""><br>
+<br>
+<big style="text-decoration: underline;">Exemplo de uso
+das pesquisas</big><br>
+<br>
+Neste
+exemplo, considere-se que é necessário pesquisar todos os laudos com
+fabricante "ADDUANA CHEMICALS" e nome comercial de produto "Eternal
+Youth". Além disso, as pesquisas podem ser para todo Importador ou
+apenas para o Importador 11.111.111/0001-00 e suas filiais.<br>
+<br>
+Existem
+alguns problemas nesta pesquisa: Sendo um campo de texto, pode ocorrer
+erro de digitação no nome do Fabricante ou do Produto. Ou, como são
+nomes compostos, até mesmo a digitação de um espaço a mais ou a
+ausência de espação entre os nomes. Além disso, em um SAT específico,
+pode ter sido usado o campo "Descrição" para colocar o Nome Comercial
+do Produto. Para contornar estes problemas, o sistema oferece três
+formas possíveis de realizar pesquisas, cada uma com suas
+particularidades.<br>
+<br>
+Observação: "Fabricante" e "Marca/Nome
+Comercial" são campos dos Itens do SAT/LAB e CNPJ Importador é um campo
+do SAT/LAB. Nesta tela é pesquisada e exiibida uma linha para cada item
+do SAT/LAB, sendo que os dados do SAT/LAB se repetirão para cada item.<br>
+<big style="text-decoration: underline;"><br>
+Usando a pesquisa "Começa com"</big><br>
+<br>
+O
+modo padrão de pesquisa é o mais simples e que terá melhor desempenho.
+Para o problema em questão, o modo mais simples e preciso de pesquisa
+seria preencher o campo "Fabricante" com "ADDUANA
+CHEMICALS",&nbsp;o campo "Nome Comercial" com "Eternal
+Youth" e clicar em "Aplicar Filtro". Para <br>
+restringir ao Importador em questão e suas filiais, colocar "11111111"
+no campo Importador.<br>
+<br>
+Há
+alguns problemas nesta abordagem restrita: caso tenham havido enganos
+no cadastramento, como digitar "ADDUANACHEMICALS" tudo junto ou mesmo
+com dois espaços entre as palavras. Assim, poderia ser colocar apenas a
+palavra "ADDUANA" no campo Fabricante para pesquisa, ou mesmo apenas
+"AD", correndo o risco de trazer mais resultados do que o desejado.
+Aleém disso, pode ter sido digitado algo como "Fab.: ADDUANA
+CHEMICALS"&nbsp;no SAT/LAB, e neste caso nenhuma das abordagens
+retornaria este SAT/LAB.<br>
+<br>
+<big style="text-decoration: underline;">Usando a pesquisa
+"Expressões regulares"</big><br>
+<br>
+O
+Sistema provê opção por este tipo de pesquisa que é bem mais poderoso
+que o padrão, mas pode ser lento dependendo de como for usado. Por
+padrão, esta pesquisa procurará por ocorrência das palavras em qualquer
+lugar dos campos procurados. Não é função desta documentação ensinar
+expressões regulares, mas é um meio poderoso de busca que vale a pena
+dominar em alguns casos. Na Internet estão disponíveis diversos manuais.<br>
+<br>
+&nbsp;Para
+procurar a palavra apenas no início do campo, como no exemplo acima,
+coloca-se um '^' no início da palavra: "^ADDUANA". &nbsp;Para
+pesquisar
+qualquer palavra iniciando em "A" e terminando em "UANA", com uma a
+duas letras entre este dois trechos, "^A{1-2}\wUANA".<br>
+<br>
+Outras expressões que podem ser úteis:<br>
+- um "." é um coringa, ou seja "ADDUANA{0-3}.CHEMICALS" retorna frases
+contendo "ADDUANA CHEMICALS" mesmo sem espaço ou com até 3 caracteres
+quaisquer entre elas;<br>
+- (?i) faz com que a pesquise ignore a "caixa" do texto: MAIÚSCULAS e
+minúsculas são consideradas iguais<br>
+<br>
+Para saber mais:<br>
+<br>
+<a href="https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html">Pattern
+- Java - Oracle</a><br>
+<a href="http://aurelio.net/regex/">Portal brasileiro de
+Expressões Regulares | Aurelio.net</a><br>
+<br>
+<big style="text-decoration: underline;">Usando a pesquisa
+"Pesquisa em texto completo"</big><br>
+<br>
+Esta
+é a busca mais completa e poderosa, porém há a possibilidade de ainda
+deixar alguns resultados de fora. Esta pesquisa usa um índice especial
+do Gerenciador de Banco de Dados chamado de "índice de texto completo".
+Resumidamente, o que este índice faz é separar em palavras todo o texto
+dos campos cadastrados no Banco de Dados e selecionados para o índice e
+criar uma entrada para cada palavra, guardando para esta palavra a
+lista de todos os lugares em que ela aparece. A pesquisa da mesma
+palavra é simultânea em todos os campos. <br>
+<br>
+No caso deste
+Sistema, o índice está preparado para pesquisar nos campos do SAT/LAB:
+descrição e observacões; E nos itens do SAT/LAB :&nbsp;descrição,
+nome
+comercial/marca/referência,&nbsp;fabricante e observacões.<br>
+<br>
+Nesta
+pesquisa é possível ainda usar coringas e operadores lógicos, conforme
+exemplos abaixo retirados do manual do Banco de Dados MySQL.<br>
+<br>
+Utilizando os operadores destes exemplos e voltando ao problema
+exemplo, um bom jeito de pesquisar seria digitar algo como:<br>
+&nbsp;"+ADDUANA +Youth CHEMICALS Eternal Etternal &nbsp;AD*"<br>
+ou ainda de forma mais restrita:<br>
+"'+CHEMICALS+Youth +(&gt;ADDUANA &lt;ADUANA)'<br>
+<br>
+Seguem exemplos para montagem de pesquisa:<br>
+<br>
+'maçã banana'<br>
+Encontrar as linhas que contêm, pelo menos, uma das duas palavras.<br>
+<br>
+'+maçã +suco'<br>
+Encontrar as linhas que contêm ambas as palavras.<br>
+<br>
+'+maçã macintosh'<br>
+Encontrar as linhas que contêm a palavra " maçã " , mas priorizar as
+que&nbsp;também contêm " Macintosh " .<br>
+<br>
+'+maçã -macintosh'<br>
+Encontrar as linhas que contêm a palavra " maçã " , mas não " macintosh
+" .<br>
+<br>
+'+maçã ~macintosh'<br>
+Encontrar
+as linhas que contêm a palavra " maçã ", mas se a linha também contém a
+palavra " macintosh " , classificá-la menor do que&nbsp;linha
+que&nbsp;não tem. <br>
+<br>
+'+maçã +(&gt;negócios &lt;strudel)'<br>
+Encontrar as linhas que contêm as palavras " maçã" e
+"&nbsp;negócios" , ou "maçã " e "strudel " (em qualquer ordem)<br>
+<br>
+'banan*'<br>
+Encontrar as linhas que contêm palavras como " banana " , " bananas" ,
+" bananeira", "bananal".<br>
+<br>
+'"algumas palavras"'<br>
+Encontrar
+as linhas que contêm a frase exata "algumas palavras" (por exemplo,
+linhas que contêm " algumas palavras de sabedoria " , mas não "algumas
+pessoas falavam palavras" ). Note-se que as aspas ("")&nbsp;que
+circundam a frase são os operadores que a delimitam.<br>
+<br>
+<big style="font-weight: bold;"><big>Ao selecionar
+um item da lista será possível:</big></big><br>
+<br>
+<span style="text-decoration: underline;">Ver SAT/LAB</span>
+- Abre uma
+janela apresentando as informações do SAT/LAB. Possui as opções de "Ver
+Laudo", "Consultar Impedimento", "Recuperar PDF do Pedido", "Ordem de
+Coleta"<br>
+<br>
+<img style="width: 529px; height: 351px;" src="SAT/SAT/%5BPESQUISA%5D/%5BVERSATLAB%5D.jpg" alt=""><br>
+<span style="text-decoration: underline;"><br>
+Ver Laudo</span> - Tela para informar <a href="ResumoLaudoForm.html">recebimento de laudos</a>
+vinculados ao SAT/LAB e carregar o respectivo arquivo digitalizado (PDF
+ou imagem) no Banco de Dados.<br>
+<br>
+<br>
+<img style="width: 498px; height: 441px;" src="SAT/SAT/%5BPESQUISA%5D/%5BVERLAUDO%5D.jpg" alt=""><br>
+<br>
+</div>
+</div>
+<p class="MsoNormal"><span style="" lang="PT-BR"></span></p><br>
+<div class="w3-col l4">
+<hr></div>
+</div>
+<br>
+</div>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer></div>
+</body></html>
