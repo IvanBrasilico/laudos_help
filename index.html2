@@ -20,20 +20,20 @@ Controle de Laudos</b></h1>
 <div class="w3-col l8 s12">
 <div class="w3-card-4 w3-margin w3-white">
 <div class="w3-container">
-<h3><span class="w3-opacity"><b>Introdução</b></span></h3>
+<h3><span class="w3-opacity"><b>IntroduÃ§Ã£o</b></span></h3>
 </div>
 <div class="w3-container">
 <p style="text-align: justify;">Este
-sistema se propõe a fornecer uma ferramenta prática para confecção de
-SATs - Solicitações de Assistência Técnica e LABs - Pedido de Exame
+sistema se propÃµe a fornecer uma ferramenta prÃ¡tica para confecÃ§Ã£o de
+SATs - SolicitaÃ§Ãµes de AssistÃªncia TÃ©cnica e LABs - Pedido de Exame
 Laboratorial, com o subsequente controle das etapas posteriores e
-acessorias: -&nbsp;Exportar relatório em PDF, pesquisa histórico,
+acessorias: -&nbsp;Exportar relatÃ³rio em PDF, pesquisa histÃ³rico,
 Controle de Fluxo para o&nbsp; SAT/LAB; - Controlar o recebimento
 de
 laudos vinculados ao SAT/LAB, armazernamento do arquivo digital e
-análise de resultados; - Gerenciar cadastro de Assistentes e
-especialidades; - Relatórios básicos gerenciais; - Cadastro de
-quesitos, com assistência na escolha destes quando da confecção do
+anÃ¡lise de resultados; - Gerenciar cadastro de Assistentes e
+especialidades; - RelatÃ³rios bÃ¡sicos gerenciais; - Cadastro de
+quesitos, com assistÃªncia na escolha destes quando da confecÃ§Ã£o do
 SAT/LAB.</p>
 </div>
 </div>
@@ -41,7 +41,7 @@ SAT/LAB.</p>
 <div class="w3-col 60">
 <div class="w3-card-2 w3-margin w3-margin-top">
 <div class="w3-container w3-white">
-<h4 style="text-align: justify;"><big style="font-weight: bold;">Acesso rápido</big><br>
+<h4 style="text-align: justify;"><big style="font-weight: bold;">Acesso rÃ¡pido</big><br>
 </h4>
 <div style="text-align: justify;"><a href="VisLaudo.html">-&gt; Como visualizar um laudo?</a><br><a href="QuesImportador.html">-&gt; Como cadastrar quesitos do importador?</a><br><a href="Aditamento.html">-&gt;
 Como criar um Aditamento?</a><br>
@@ -49,12 +49,12 @@ Como criar um Aditamento?</a><br>
 Como importar
 pedido de exame do SISCOMEX?</a><br>
 <a href="ImportaHistoricoDIForm.html">-&gt;
-Como importar histórico da DI?</a><br>
+Como importar histÃ³rico da DI?</a><br>
 <a href="ItemSATForm.html">-&gt;
 Como cadastrar um novo item?</a><br>
 <br>
 <big style="font-weight: bold;">
-Solicitação de Assistência Técnica
+SolicitaÃ§Ã£o de AssistÃªncia TÃ©cnica
 </big><br>
 <a href="SATForm.html">-&gt;
 Cadastro</a>
@@ -90,12 +90,12 @@ Gerar Arquivo de Impedimento</a><br>
 <a href="EspecialidadeForm.html">-&gt;Especialidade</a>
 <br>
 <a href="QuesitoForm.html">-&gt;Quesitos</a><br>
--------------<span style="text-decoration: underline;"></span><br><a href="Usuarios.html">-&gt;Usuários</a><br><a href="Servidores.html">-&gt;Servidores</a><br>
+-------------<span style="text-decoration: underline;"></span><br><a href="Usuarios.html">-&gt;UsuÃ¡rios</a><br><a href="Servidores.html">-&gt;Servidores</a><br>
 <br>
-<big><span style="font-weight: bold;">Relatórios</span>
+<big><span style="font-weight: bold;">RelatÃ³rios</span>
 </big><br>
 <br>
-<big><span style="font-weight: bold;">Utilitários
+<big><span style="font-weight: bold;">UtilitÃ¡rios
 </span></big><br>
 <a href="ClassificaForm.html">-&gt;
 Classificador
@@ -117,8 +117,8 @@ Impedimentos Antigos</a><br>
 de acesso</a>
 <br>
 <br>
-<a href="docs.html">&gt;Documentação
-técnica</a><br>
+<a href="docs.html">&gt;DocumentaÃ§Ã£o
+tÃ©cnica</a><br>
 <br>
 </div>
 </div>
